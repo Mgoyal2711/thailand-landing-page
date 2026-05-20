@@ -323,10 +323,16 @@ export default function EnquiryModal({ open, onClose }) {
               </label>
 
               <input
-                type="date"
+                type="text"
                 name="travel_date"
+                placeholder="DD/MM/YYYY"
                 required
-                min={new Date().toISOString().split("T")[0]}
+                onFocus={(e) => (e.target.type = "date")}
+                onBlur={(e) => {
+                  if (!e.target.value) {
+                    e.target.type = "text";
+                  }
+                }}
                 className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none"
               />
 
