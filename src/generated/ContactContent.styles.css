@@ -1,0 +1,13 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background: #eef4f8;
+    }
+
+    .hero-overlay {
+      background:
+        linear-gradient(
+          to right,
+          rgba(0,0,0,0.72),
+          rgba(0,0,0,0.45)
+        );
+    }

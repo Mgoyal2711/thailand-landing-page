@@ -1,0 +1,23 @@
+* {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      background:
+        linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.50));
+    }
+
+    .policy-card {
+      transition: .3s ease;
+    }
+
+    .policy-card:hover {
+      transform: translateY(-4px);
+    }
